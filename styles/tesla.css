@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+}
+
+.car {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    justify-content: center;
+    justify-items: center;
+}
+
+h1 {
+    font-size: 56px;
+    font-weight: 100;
+    margin-bottom: 28px;
+}
+
+.car__details {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 8rem;
+    padding: 32px 0;
+}
+
+.car__details .car__title {
+    color: #555555;
+    font-size: 28px;
+    text-transform: capitalize;
+}
+
+.car__details .car__number {
+    color: #3696ec;
+    font-size: 48px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.car__details sup {
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+
+.conditions {
+    display: grid;
+    grid-template-columns: 200px 200px 100px 400px;
+    grid-gap: 2rem;
+    justify-content: center;
+}
+
+.speed, .temperature, .wheels, .buttons{
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+}
+
+.speed, .temperature, .wheels {
+    height: 100px;
+}
+
+.con__title {
+    color: #777777;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.con__details {
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    justify-items: center;
+    align-items: center;
+    border: 2px solid #d7d7d7;
+    width: 200px;
+    background-color: #ececec;
+}
+
+.con__details__number {
+    font-size: 36px;
+}
+
+.con__details__number span {
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+
+button {
+    outline: none;
+    border: none;
+    color: #3696ec;
+    width: 40px;
+    font-size: 20px;
+    background: transparent;
+}
+
+button:first-child {
+    border-bottom: 2px solid #d7d7d7;
+}
+
+.circle {
+    text-transform: uppercase;
+    padding: 16px 0;
+    margin-top: 20px;
+    height: 64px;
+    border: 2px solid #d7d7d7;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0 0 10px #d7d7d7 inset;
+}
+
+.last__con__details {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 2rem;
+}
+
+.wheel__details {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    background: #ececec;
+    border: 2px solid #d7d7d7;
+    font-size: 20px;
+}
+
+.wheel__details.active {
+    border: 2px solid #3696ec;
+}
+.wheel__details:hover {
+    border: 2px solid #3696ec;
+}
+
+.wheel__details img.small {
+    width: 40px;
+    height: 40px;
+}
+
+.wheel__details img.large {
+    width: 50px;
+    height: 50px;
+}
+
+.declaration {
+    font-size: 16px;
+    color: #555555;
+    margin: 30px 220px;
+    line-height: 20px;
+}
